@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.0
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 17, 2019 at 11:42 PM
--- Server version: 10.1.25-MariaDB
--- PHP Version: 5.6.31
+-- Generation Time: Jun 05, 2019 at 03:53 PM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 7.3.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -146,7 +146,8 @@ INSERT INTO `projects_table` (`project_id`, `project_ref`, `country_id`, `grant_
 (15, 'MDG-RS-001', 'MAD', 300000, '2018-07-20', '2018-07-20', '2019-07-19', 12, 'Capacity Building', 177588.00, 'under implementation'),
 (16, 'MLY-RS-002', 'MAL', 819230, '2017-06-16', '2017-06-16', '2020-11-13', 24, 'REDD+', 465695.34, 'under implementation'),
 (17, 'MDV-RS-001', 'MLD', 300000, '2018-07-17', '2018-07-17', '2018-06-13', 12, 'Capacity Building', 198545.00, 'under implementation'),
-(18, 'MRT-RS-002', 'MTA', 2670374, '2018-07-17', '2018-07-17', '2021-07-08', 36, 'NAP', 742163.00, 'under implementation');
+(18, 'MRT-RS-002', 'MTA', 2670374, '2018-07-17', '2018-07-17', '2021-07-08', 36, 'NAP', 742163.00, 'under implementation'),
+(22, 'MMR-RS-002', 'MYA-AP', 300000, '2017-11-10', '2017-11-10', '2019-05-11', 18, 'Capacity Building', 115840.00, 'under implementation');
 
 -- --------------------------------------------------------
 
