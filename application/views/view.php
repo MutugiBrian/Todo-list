@@ -32,7 +32,7 @@
               <div class="tab-pane" id="other" role="tabpanel" aria-labelledby="other-tab">
                 <p>Readiness Type : <?php echo $project->readiness_type;?></p>
                 <p>First Disbursment Amount : <?php echo $project->first_disbursment;?></p>
-                <p>Status : <?php echo $project->status;?></p>
+                <p class="text-capitalize">Status : <?php echo $project->status;?></p>
               </div>
             </div>
         </div>
