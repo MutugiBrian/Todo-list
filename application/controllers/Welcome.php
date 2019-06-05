@@ -29,12 +29,6 @@ class Welcome extends CI_Controller {
 		$this->load->view('create');
 	}
 
-	public function api(){
-		/*$this->load->view('api');*/
-	}
-
-	
-
 	public function update($project_id){
 		$this->load->model('queries');
 		$project = $this->queries->getSingleProjects($project_id);
@@ -112,10 +106,10 @@ class Welcome extends CI_Controller {
 		$this->load->view('view', ['project'=>$project]);
 	}
 
-	public function loadall(){
+	/*public function api(){
 		$sql = $this->db->query("SELECT * FROM projects_table")->result();
 		echo json_encode($sql);
-	}
+	}*/
 
 	public function delete($project_id){
 		$this->load->model('queries');
