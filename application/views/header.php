@@ -65,5 +65,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-primary bg-dark">
-  <a class="navbar-brand" href="#">UNEP Project Manager</a>
+  <a class="navbar-brand" href="<?php echo base_url()?>">UNEP Project Manager</a>
 </nav>
