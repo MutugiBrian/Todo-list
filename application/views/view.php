@@ -39,7 +39,7 @@
       <div class="card-footer text-muted">
         <div class="form-group">
             <div class="col-md-10 col-md-offset-2">
-                <?php echo anchor('?format=json', 'Load JSON', ['class'=>'btn btn default']);?>
+                <a class = 'btn btn default' href="<?php echo $_SERVER['PHP_SELF']?>?format=json">Load JSON</a>
                 <?php echo anchor('welcome', 'Go Back', ['class'=>'btn btn default']);?>
             </div>
         </div>
