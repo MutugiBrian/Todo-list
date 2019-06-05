@@ -21,7 +21,7 @@
               <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="info-tab">
                 <p>Project Ref : <?php echo $project->project_ref;?></p>
                 <p>Country ID : <?php echo $project->country_id;?></p>
-                <p>Grant Amount : <?php echo $project->grant_amount;?></p>
+                <p>Grant Amount (in $): <?php echo $project->grant_amount;?></p>
               </div>
               <div class="tab-pane" id="dates" role="tabpanel" aria-labelledby="dates-tab">
                 <p>Dates from GCF : <?php echo $project->dates_from_gcf;?></p>
@@ -31,7 +31,7 @@
               </div>
               <div class="tab-pane" id="other" role="tabpanel" aria-labelledby="other-tab">
                 <p>Readiness Type : <?php echo $project->readiness_type;?></p>
-                <p>First Disbursment Amount : <?php echo $project->first_disbursment;?></p>
+                <p>First Disbursment Amount (in $): <?php echo $project->first_disbursment;?></p>
                 <p>Status : <?php echo $project->status;?></p>
               </div>
             </div>
