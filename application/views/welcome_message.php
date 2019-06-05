@@ -2,7 +2,10 @@
   <div class="container-fluid my-5">
     <h3>Projects</h3>
     <?php if($msg = $this->session->flashdata('msg')):?>
-        <?php $color = ($msg == 'Project Deleted Successfully')?'success':'danger'; ?>
+        <?php
+          $successful_states = array('Project Saved Successfully', 'Project Updated Successfully', 'Project Deleted Successfully');
+          $color = in_array($msg, $successful_states)?'success':'danger';
+        ?>
         <div class="alert alert-<?=$color;?> alert-dismissible fade show close alert-close">
           <?php echo $msg; ?>
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -12,7 +15,7 @@
     <?php endif;?> 
     <?php echo anchor('welcome/create', 'Add New Project', ['class'=>'btn btn-primary']);?>
     <a class = 'btn btn primary' href="<?php echo $_SERVER['PHP_SELF']?>?format=json">Load JSON</a>
-    <div class="mt-3  table-responsive">
+    <div class="mt-3 table-responsive">
     <table id="project_table" class="table table-borderless table-hover">
       <thead>
         <tr>
