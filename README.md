@@ -1,6 +1,6 @@
 # UNEP Project Manager
 A CRUD web application for managing project details.
-I developed the ‘UNEP Project Manager’ web app using the PHP CodeIgniter and Bootstrap frameworks and a MySQL database.
+I developed the ‘UNEP Project Manager’ web app using CodeIgniter PHP, Bootstrap, DataTables and a MySQL database.
 To install the app, clone the repository and place it in the htdocs of your xampp/lamp/wamp server folder. 
 Import the database and navigate to localhost/unepprojectmanager in your browser.
 The database dump is ‘projectmanager.sql’ and is located in the root of the folder.    
