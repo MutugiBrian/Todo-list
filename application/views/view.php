@@ -6,13 +6,13 @@
         <p>Project ID: <?php echo $project->project_id;?></p>
         <ul class="nav nav-tabs card-header-tabs">
           <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" id="info-tab" href="#home">Info</a>
+            <a class="nav-link active" data-toggle="tab" id="info-tab" href="#home">Summary</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="tab" id="dates-tab" href="#dates">Dates</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" id="other-tab" href="#other">Other</a>
+            <a class="nav-link" data-toggle="tab" id="other-tab" href="#other">Status</a>
           </li>
         </ul>
       </div>
@@ -39,7 +39,7 @@
       <div class="card-footer text-muted">
         <div class="form-group">
             <div class="col-md-10 col-md-offset-2">
-                <a class = 'btn btn default' href="<?php echo $_SERVER['PHP_SELF']?>?format=json">Load JSON</a>
+                <a class = 'btn btn-primary' href="<?php echo $_SERVER['PHP_SELF']?>?format=json">Load JSON</a>
                 <?php echo anchor('welcome', 'Go Back', ['class'=>'btn btn default']);?>
             </div>
         </div>
