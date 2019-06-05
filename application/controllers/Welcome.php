@@ -17,23 +17,8 @@ class Welcome extends CI_Controller {
 	 * So any other public methods not prefixed with an underscore will
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
-	 */
-	/* Pagination*/
-	/*function __construct() {
-		parent::__construct();
-
-		$this->load->model('queries');
-
-		$this->load->helper('form');
-		$this->load->library('form_validation');
-
-		$this->load->library('pagination');
-
-		$this->perPage = 10;
-
-	}
-	*/
-	 public function index()
+	 **/
+	public function index()
 	{
 		$this->load->model('queries');
 		$projects = $this->queries->getProjects();
@@ -48,8 +33,9 @@ class Welcome extends CI_Controller {
 		/*$this->load->view('api');*/
 	}
 
-	public function loaddata(){
-
+	public function loadall(){
+		$sql = $this->db->query("SELECT * FROM projects_table")->result();
+		echo json_encode($sql);
 	}
 
 	public function update($project_id){
