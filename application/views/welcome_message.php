@@ -22,13 +22,13 @@
           <th scope="col">Project ID</th>
           <th scope="col">Project Ref</th>
           <th scope="col">Country ID</th>
-          <th scope="col">Grant Amount</th>
+          <th scope="col">Grant Amount (in $)</th>
           <th scope="col">Dates from GCF</th>
           <th scope="col">Start Date</th>
           <th scope="col">End Date</th>
           <th scope="col">Duration</th>
           <th scope="col">Readiness Type</th>
-          <th scope="col">First Disbursment</th>
+          <th scope="col">First Disbursment (in $)</th>
           <th scope="col">Status</th>
           <th scope="col">Action</th>
         </tr>

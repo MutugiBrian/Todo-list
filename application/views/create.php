@@ -1,6 +1,6 @@
 <?php include_once('header.php'); ?>
 
-    <div class="container">
+    <div class="container-fluid my-5">
         <?php echo form_open('welcome/save', ['class'=>'form form-horizontal']);?>
             <fieldset class="row d-flex my-3">
                 <legend class="col-md-6 col-sm-10 col-xs-12 mx-auto">Add a New Project</legend>
@@ -89,19 +89,7 @@
                     <?php echo form_submit(['name'=>'submit', 'value'=>'Save', 'class'=>'btn btn-primary mr-auto']);?>
                 </div>
 
-                <!-- Test -->
-                <div class="col-md-6 col-sm-10 col-xs-12 mx-auto form-group">
-                <label for="test">Test</label>
-                <select name="test" id="test" class="form-control" placeholder="Select readiness type">
-                    <?php 
-                        $db = mysqli_connect("localhost", "root", "", "projectmanager") or die("Couldn't connect");
-                        $res = mysqli_query($db, "SELECT readiness_type FROM readiness_table") or die(mysqli_error($db));
-                        while ($row = mysqli_fetch_row($res)):
-                    ?>
-                        <option value="<?=$row[0];?>"></option>
-                    <?php endwhile; ?>
-                </select>
-                </div>  
+  
             </fieldset>
         <?php echo form_close();?>
     </div>
