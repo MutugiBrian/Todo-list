@@ -39,6 +39,7 @@
       <div class="card-footer text-muted">
         <div class="form-group">
             <div class="col-md-10 col-md-offset-2">
+                <?php echo anchor('?format=json', 'Load JSON', ['class'=>'btn btn default']);?>
                 <?php echo anchor('welcome', 'Go Back', ['class'=>'btn btn default']);?>
             </div>
         </div>

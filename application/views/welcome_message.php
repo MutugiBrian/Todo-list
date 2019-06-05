@@ -11,6 +11,7 @@
         </div>
     <?php endif;?> 
     <?php echo anchor('welcome/create', 'Add New Project', ['class'=>'btn btn-primary']);?>
+    <?php echo anchor('welcome?format=json', 'Load JSON', ['class'=>'btn btn-primary']);?>
     <div class="mt-3  table-responsive">
     <table id="project_table" class="table table-borderless table-hover">
       <thead>

@@ -2,6 +2,7 @@
   <div class="container">
     <h4>Projects Table</h4> 
     <?php echo anchor('welcome/create', 'Add New Project', ['class'=>'btn btn-primary']);?>
+    <?php echo anchor('welcome/loadall', 'Load JSON', ['class'=>'btn btn-primary']);?>
     <table class="table table-hover">
       <thead>
         <tr>
@@ -47,6 +48,6 @@
             </tr>
           <?php endif;?>
       </tbody>
-    </table> 
+    </table>
     </div>
 <?php include_once('footer.php'); ?>
