@@ -1,18 +1,18 @@
 <?php include_once('header.php'); ?>
 <div class="container">
-    <div class="card text-center">
+    <div class="card text-center mt-5">
       <div class="card-header">
         <h3>Project Details</h3>
         <p>Project ID: <?php echo $project->project_id;?></p>
-        <ul class="nav nav-tabs card-header-tabs">
+        <ul class="nav nav-pills card-header-tabs">
           <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" id="info-tab" href="#home">Info</a>
+            <a class="nav-link active" data-toggle="pill" id="info-tab" href="#home">Summary</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" id="dates-tab" href="#dates">Dates</a>
+            <a class="nav-link" data-toggle="pill" id="dates-tab" href="#dates">Dates</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" id="other-tab" href="#other">Other</a>
+            <a class="nav-link" data-toggle="pill" id="other-tab" href="#other">Other</a>
           </li>
         </ul>
       </div>
@@ -44,6 +44,6 @@
             </div>
         </div>
       </div>
-    </div>   
+    </div> 
 </div>     
 <?php include_once('footer.php'); ?>
