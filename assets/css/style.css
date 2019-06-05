@@ -1,5 +1,6 @@
 .alert-close{
-	padding: 0.75rem 1.25rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 .alert-close:hover{
 	color: #fff;

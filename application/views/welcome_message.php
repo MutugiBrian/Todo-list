@@ -1,5 +1,5 @@
 <?php include_once('header.php'); ?>
-  <div class="container my-5">
+  <div class="container-fluid my-5">
     <h3>Projects</h3>
     <?php if($msg = $this->session->flashdata('msg')):?>
         <?php $color = ($msg == 'Project Deleted Successfully')?'success':'danger'; ?>
@@ -43,17 +43,17 @@
             <td><?php echo $project->duration;?></td>
             <td><?php echo $project->readiness_type;?></td>
             <td><?php echo $project->first_disbursment;?></td>
-            <td><?php echo $project->status;?></td>
+            <td class="text-capitalize"><?php echo $project->status;?></td>
             <td>
-              <?php echo anchor("welcome/view/{$project->project_id}", '<i class="fas fa-eye"></i>', ['class'=>'text-primary']);?>
-              <?php echo anchor("welcome/update/{$project->project_id}", '<i class="fas fa-edit"></i>', ['class'=>'text-success']);?>
-              <?php echo anchor("welcome/delete/{$project->project_id}", '<i class="fas fa-trash-alt"></i>', ['class'=>'text-danger']);?>
+              <?php echo anchor("welcome/view/{$project->project_id}", 'View', ['class'=>'badge badge-primary']);?>
+              <?php echo anchor("welcome/update/{$project->project_id}", 'Update', ['class'=>'badge badge-success']);?>
+              <?php echo anchor("welcome/delete/{$project->project_id}", 'Delete', ['class'=>'badge badge-danger']);?>
             </td>
           </tr>
           <?php endforeach; ?>
         <?php else: ?>  
           <tr>
-            <td>No Records Found.</td>
+            No Records Found.
           </tr>
         <?php endif;?>
       </tbody>
