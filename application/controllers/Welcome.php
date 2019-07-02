@@ -120,5 +120,12 @@ class Welcome extends CI_Controller {
 			$this->session->set_flashdata('msg', 'Failed to Delete Project');
 		}
 		return redirect('welcome');
-	}
+	}		
+
+	/* public function chart(){
+		$this->load->model('queries');
+		$data = $this->queries->get_data()->result();
+		$x['data'] = json_encode($data);
+		$this->load->view('charts',$x);
+	  }*/
 }
