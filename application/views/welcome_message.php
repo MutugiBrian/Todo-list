@@ -14,7 +14,7 @@
         </div>
     <?php endif;?> 
     <?php echo anchor('welcome/create', 'Add New Project', ['class'=>'btn btn-primary']);?>
-    <?php echo anchor('welcome/charts', 'View Project Funding Trends', ['class'=>'btn btn-primary']);?>
+    <?php echo anchor('welcome/chart', 'View Project Funding Trends', ['class'=>'btn btn-primary']);?>
     <a class = 'btn btn primary' href="<?php echo $_SERVER['PHP_SELF']?>?format=json">Load JSON</a>
     <div class="mt-3 table-responsive">
     <table id="project_table" class="table table-borderless table-hover">

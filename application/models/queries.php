@@ -54,10 +54,10 @@
             }
 
             //chart data
-	    /*public function get_data(){
+	    public function get_data(){
 		    $this->db->select('project_ref,grant_amount,duration,status');
 		    $result = $this->db->get('projects_table');
 		    return $result;
-            }*/
+            }
     }
 ?>

@@ -5,16 +5,20 @@
         <div id="graph"></div>
 
         <script src="<?php echo base_url().'assets/js/jquery.min.js'?>"></script>
-        <script src="<?php echo base_url().'assets/js/raphael-min.js'?>"></script>
-        <script src="<?php echo base_url().'assets/js/morris.min.js'?>"></script>
-        <script>
-            Morris.Bar({
-            element: 'graph',
-            data: <?php echo $data;?>,
-            xkey: 'project_ref',
-            ykeys: ['duration', 'grant_amount', 'status'],
-            labels: ['Duration', 'Grant Amount (in $)', 'Status']
-            });
+        <script src="<?php echo base_url().'assets/js/highcharts.js'?>"></script>
+        <script src="<?php echo base_url().'assets/js/highcharts-3d.js'?>"></script>
+        <script src="<?php echo base_url().'assets/js/highcharts-more.js'?>"></script>
+        <script type="text/javascript">
+            jQuery (document).ready(function()
+            {
+                
+            })
+            //Morris.Bar({
+            //element: 'graph',
+            //data: <?php echo $data;?>,
+            //xkey: 'project_ref',
+            //ykeys: ['duration', 'grant_amount', 'status'],
+            //labels: ['Duration', 'Grant Amount (in $)', 'Status']});
         </script>
 
     </div>

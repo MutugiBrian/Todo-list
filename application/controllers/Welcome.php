@@ -122,10 +122,10 @@ class Welcome extends CI_Controller {
 		return redirect('welcome');
 	}		
 
-	/* public function chart(){
+	public function chart(){
 		$this->load->model('queries');
 		$data = $this->queries->get_data()->result();
 		$x['data'] = json_encode($data);
 		$this->load->view('charts',$x);
-	  }*/
+	  }
 }

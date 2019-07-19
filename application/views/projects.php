@@ -4,7 +4,7 @@
   <div class="container">
     <h4>Projects Table</h4> 
     <?php echo anchor('welcome/create', 'Add New Project', ['class'=>'btn btn-primary']);?>
-    <?php echo anchor('welcome/charts', 'View Project Funding Trends', ['class'=>'btn btn-primary']);?>
+    <?php echo anchor('welcome/chart', 'View Project Funding Trends', ['class'=>'btn btn-primary']);?>
     <a class = 'btn btn primary' href="<?php echo $_SERVER['PHP_SELF']?>?format=json">Load JSON</a>
     <table class="table table-hover">
       <thead>

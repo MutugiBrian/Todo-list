@@ -22,6 +22,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/all.css')?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/style.css')?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/morris.css')?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/highcharts.css')?>">
 	<link href="<?php echo base_url('assets/img/favicon.png')?>" rel="shortcut icon" type="image/x-icon" />
 	<script type='text/javascript' src="<?php echo assets_url('assets/js/raphael-min.js');?>"></script>
 	<script type='text/javascript' src="<?php echo assets_url('assets/js/morris.min.js');?>"></script>
