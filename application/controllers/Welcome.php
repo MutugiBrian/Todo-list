@@ -133,7 +133,7 @@ class Welcome extends CI_Controller {
 		//$data['title'] = 'Funding Trends';
 		$this->load->model('queries');
 		$data = $this->queries->get_data()->result();
-		$data['data'] = json_encode($data);
+		$data['charts'] = json_encode($data);
 		$this->load->view('charts', $data);
 	  }
 }
