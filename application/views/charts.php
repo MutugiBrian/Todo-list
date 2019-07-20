@@ -4,38 +4,14 @@
         <script src="<?php echo base_url().'assets/js/highcharts.js'?>"></script>
         <script src="<?php echo base_url().'assets/js/highcharts-3d.js'?>"></script>
         <script src="<?php echo base_url().'assets/js/highcharts-more.js'?>"></script>
+        
+        <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+        
+        <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
         <div class="container-fluid my-5" id="graph">
         <h4>Project Funding Trends</h4>
-        <script type="text/javascript">
-        var chart1;
-        jQuery(doument).ready(function()
-        {
-            chart1 = new Highcharts.Chart({
-                chart: {
-                    rednderTo: 'container',
-                    type: 'bar'
-                },
-                title: {
-                    text: 'Project Funding'
-                },
-                xAxis: {
-                    categories: ['Project 1', 'Project 2', 'Project 3']
-                },
-                yAxis: {
-                    title: {
-                        text: 'Funding Cost'
-                    }
-                },
-                series: [{
-                    name: 'CSD',
-                    data: [1000,5000,10000]
-                },{
-                    name: 'Law',
-                    data: [2000,4000,8000]
-                }]
-            })
-        })
-        </script>
+        <?php include("path/to/local/fusioncharts.php"); ?>
+        <?php $Chart = new FusionCharts("column2d", "MyFirstChart" , "700", "400", "chart-container", "json", $jsonEncodedData);?>
         </div>
     </div>
     <?php echo anchor('welcome', 'Go Back', ['class'=>'btn btn-danger']);?>
