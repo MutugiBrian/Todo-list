@@ -12,7 +12,7 @@
         
         
         </div>
-    </div>
+    <div>
     <?php echo anchor('welcome', 'Go Back', ['class'=>'btn btn-danger']);?>
     </div> 
 
