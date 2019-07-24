@@ -30,6 +30,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.js');?>"></script>
 	<script type="text/javascript" src="<?php echo base_url('assets/js/datatables.js');?>"></script>
 	<script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap-datepicker.js');?>"></script>
+	<!--ChartJS-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css"></script>
 	<script>
 			$(document).ready(function(){
 				var date_input=$('input[name="dates_from_gcf"]');
