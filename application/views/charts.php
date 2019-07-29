@@ -1,6 +1,6 @@
 <?php include_once('header.php'); ?>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script src="<?php echo base_url().'assets/js/jquery.min.js'?>"></script>
+        <!-- <script src="<?php echo base_url().'assets/js/jquery-3.4.1.min.js'?>"></script> -->
         <script src="<?php echo base_url().'assets/js/highcharts.js'?>"></script>
         <script src="<?php echo base_url().'assets/js/highcharts-3d.js'?>"></script>
         <script src="<?php echo base_url().'assets/js/highcharts-more.js'?>"></script>
@@ -11,14 +11,8 @@
         <div id="container" style="width: 75%;">
 		<canvas id="canvas"></canvas>
 	    </div>
-	        <button id="randomizeData">Randomize Data</button>
-	        <button id="addDataset">Add Dataset</button>
-	        <button id="removeDataset">Remove Dataset</button>
-	        <button id="addData">Add Data</button>
-	        <button id="removeData">Remove Data</button>
-	
-    <script>
-		var ctx = document.getElementById('myChart').getContext('2d');
+<script>
+		var ctx = document.getElementById('canvas').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
