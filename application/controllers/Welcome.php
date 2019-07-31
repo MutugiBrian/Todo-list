@@ -28,17 +28,17 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		$this->load->model('queries');
-		$projects = $this->queries->getProjects();
-		$this->load->view('welcome_message', ['projects'=>$projects]);
+		$projects = $this->queries->getUsers();
+		$this->load->view('users', ['projects'=>$projects]);
 	}
 
 	public function create(){
 		$this->load->view('create');
 	}
 
-	public function update($project_id){
+	public function update($email){
 		$this->load->model('queries');
-		$project = $this->queries->getSingleProjects($project_id);
+		$project = $this->queries->getSingleUser($email);
 		$this->load->view('update', ['project'=>$project]);
 	}
 

@@ -9,14 +9,14 @@ Class MY_Loader extends CI_Loader {
 	}
 	public function view($view, $vars = array(), $return = FALSE) {
 		$format = $this->ci->input->get('format');
-		if($format == 'json') {
+		/*if($format == 'json') {*/
 			$this->ci->_json_array[$view] = $vars;
 			$this->ci->output
 				->set_output(json_encode($this->ci->_json_array, JSON_NUMERIC_CHECK));
-		}
+		/*}
 		else {
 			parent::view($view, $vars, $return);
-		}
+		}*/
 	}
 }
 
