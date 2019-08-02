@@ -22,6 +22,19 @@
             }
         }
 
+        public function getSingleUserLogin($email,$pass){
+            $pass = md5($pass);
+            $query = $this->db->get_where('users',
+             array('email' => $email,
+                   'password' => $pass
+                   ));
+            if ($query->num_rows() > 0 ){
+                return $query->row();
+            }else{
+                return 'wrong user details';
+            }
+        }
+
         public function updateUser($data, $email){
             return $this->db->where('users', $email)->update('users', $data);
         }
