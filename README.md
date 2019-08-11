@@ -1,4 +1,4 @@
-# UNEP Project Manager
+# project under vue todo folder
 A CRUD web application for managing project details.
 I developed the ‘UNEP Project Manager’ web app using CodeIgniter PHP, Bootstrap, DataTables and a MySQL database.
 To install the app, clone the repository and place it in the htdocs of your xampp/lamp/wamp server folder. 
